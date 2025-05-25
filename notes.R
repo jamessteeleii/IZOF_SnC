@@ -4,7 +4,7 @@
 
 # Study 2
 # Each sheet a different timepoint - time varies between and within id so treat as just replicates
-# Column names are "modality_functionality_intensity/perceivedintensity" e.g., P+I is positive functional intensity
+# Column names are "modality_functionality_intensity/perceived_impact" e.g., P+I is positive functional intensity
 # for clarity "modality" is the domain on the IZOF questionnaire (PBS scale)
 # Includes objective performance measures and also self-referenced rating on 11 pt scale
 
@@ -29,7 +29,7 @@ objective_performance ~ modality_intensity
 
 # Study 3
 # Each sheet a different timepoint - time varies between and within id so treat as just replicates
-# Column names are "modality_functionality_intensity/perceivedintensity" e.g., P+I is positive functional intensity
+# Column names are "modality_functionality_intensity/perceived_impact" e.g., P+I is positive functional intensity
 # for clarity "modality" is the domain on the IZOF questionnaire (PBS scale)
 # Includes only self-referenced rating on 11 pt scale
 
@@ -54,7 +54,7 @@ self_ref_performance ~ modality_intensity
 
 
 # Study 4
-# Control vs positive feedback vs technical cooaching vs music
+# Control vs positive feedback vs technical coaching vs music
 
 # Standard pre-post control experiment for each interventions effect on modality_intensity and modality_perceived impact
 (modality_intensity + modality_perceived_impact) ~ time + time:intervention 
